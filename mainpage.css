@@ -1,9 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
 body {
   background-color: #7879f1;
 }
 
+.headline {
+  text-align: center;
+  padding: 48px 0 24px 0;
+}
+
 h1 {
   color: white;
-  font-family: monospace;
+  font-family: Rajdhani;
   font-size: 80px;
+  margin: 0;
+}
+
+h5 {
+  color: white;
+  font-family: Rajdhani;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 4px 0 0 0;
+}
+
+p {
+  color: white;
+  font-family: Rajdhani;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 6px 21px;
+  width: 80px;
+}
+
+#hidden {
+  color: #7879f1;
+  font-family: Rajdhani;
+  font-size: 16px;
+  font-weight: 600;
+  width: 80px;
+  margin: 0px 10px -10px 32px;
+  transform: rotate(12deg);
+}
+
+img {
+  width: 122px;
+  height: 63px;
+}
+
+.maincontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  max-width: 800px;
+}
+.sushicard {
+  text-align: center;
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.collapsible {
+  background-color: #7879f1;
+  border: none;
+  padding: 24px 0 0 0;
+  transition: all 0.1s ease-in-out;
+}
+
+/*define what the style of the button when it's hovered*/
+
+.collapsible:hover {
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.collapsible:hover p {
+  background-color: white;
+  border-radius: 100%;
+  color: transparent;
+}
+
+.collapsible:hover #hidden {
+  display: block;
+  color: white;
+}
+
+/*define what the style of the button when it's clicked*/
+/*
+.active {
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+.active p {
+  background-color: white;
+  border-radius: 100%;
+  color: transparent;
+}
+
+.active #hidden {
+  display: block;
+  color: white;
+}
+
+
+
+.recipe {
+  display: none;
+  overflow: hidden;
+  color: white;
+  width: 800px;
+}
+
+/*
+.recipecontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+*/
+
+/* The Overlay (background) */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  bottom: 0;
+  background-color: #a5a6f6; /* Black fallback color */
+  /*background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 100px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

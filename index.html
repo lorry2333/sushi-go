@@ -1,12 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+
     <link rel="stylesheet" href="mainpage.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-      <h1>いただきます</h1>
+     
+
+
+     <!--overlay for recipe section-->
+
+         <!-- The overlay -->
+         <div id="recipe" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+            <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+      
+        </div>
+      
+
+
+
+
+      <!--title of the page-->
+    <div class="headline">
+        <h1>いただきます</h1>
+        <h5>Welcome to the World of Sushi</h5>
+   </div>
+
+
+     <!--main section of the page-->
+    <div class="container">
+     <div class="maincontent">
+
+  
+     <button onclick="openNav()" type="button" class="collapsible">
+       <div class="sushicard" >
+          <span id="hidden">I am tako :)</span>
+          <img src="image/tako.png" alt="tako sushi" >
+          <p>tako</p>
+       </div>
+     </button>
+    
+     
+    
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+          <span id="hidden">hirame :P</span>
+          <img src="image/hirame.png" alt="hirame sushi" >
+          <p>hirame</p>
+       </div>
+    </button>
+    
+
+    <button type="button" class="collapsible">
+       <div class="sushicard" >
+         <span id="hidden">hamachi!</span>
+         <img src="image/hamachi.png" alt="hamachi sushi" >
+          <p>hamachi</p>
+        </div>
+    </button>
+
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+          <span id="hidden">I am ebi ;)</span>
+          <img src="image/ebi.png" alt="ebi sushi">
+           <p>ebi</p>
+        </div>
+    </button>
+
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+          <span id="hidden">hokkigai!</span>
+          <img src="image/hokkigai.png" alt="hokkigai sushi" >
+          <p>hokkigai</p>
+        </div>
+    </button>
+
+    <button type="button" class="collapsible">
+       <div class="sushicard" >
+        <span id="hidden">tamago :)</span>
+         <img src="image/tamago.png" alt="tamago sushi">
+         <p>tamago</p>
+       </div>
+    </button>
+
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+         <span id="hidden">I am kani!</span>
+         <img src="image/kani.png" alt="kani sushi" >
+         <p>kani</p>
+        </div>
+    </button>
+
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+         <span id="hidden">saba here!</span>
+         <img src="image/saba.png" alt="saba sushi">
+         <p>saba</p>
+       </div>
+    </button>
+      
+    <button type="button" class="collapsible">  
+        <div class="sushicard" >
+        <span id="hidden">anago :)</span>
+         <img id=anago src="image/anago.png" alt="anago sushi">
+         <p>anago</p>
+       </div>
+    </button>
+
+    <button type="button" class="collapsible">  
+       <div class="sushicard" >
+         <span id="hidden">ikura :P</span>
+         <img src="image/ikura.png" alt="ikura sushi">
+         <p>ikura</p>
+       </div>
+    </button>
+
+    <button type="button" class="collapsible">
+        <div class="sushicard" >
+         <span id="hidden">futomaki :)</span>
+         <img src="image/futomaki.png" alt="futomaki sushi">
+         <p>futomaki</p>
+        </div>
+    </button>
+
+    <button type="button" class="collapsible">
+       <div class="sushicard" >
+         <span id="hidden">philadelphia!</span>
+         <img src="image/philadephia.png" alt="philadelphia sushi">
+         <p>philadelphia</p>
+       </div>
+    </button>
+ 
+     </div>
+    </div>
+
+   
+ 
+     
+
+      
+     
+      
+    <script src="mainpage.js"></script>
     
   </body>
 </html>
