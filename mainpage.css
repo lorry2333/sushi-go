@@ -57,6 +57,7 @@ img {
   max-width: 800px;
 }
 .sushicard {
+  cursor: pointer;
   text-align: center;
   padding: 12px 24px;
   display: flex;
@@ -95,43 +96,6 @@ img {
   color: white;
 }
 
-/*define what the style of the button when it's clicked*/
-/*
-.active {
-  padding-top: 10px;
-  padding-bottom: 14px;
-}
-
-.active p {
-  background-color: white;
-  border-radius: 100%;
-  color: transparent;
-}
-
-.active #hidden {
-  display: block;
-  color: white;
-}
-
-
-
-.recipe {
-  display: none;
-  overflow: hidden;
-  color: white;
-  width: 800px;
-}
-
-/*
-.recipecontainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-  align-items: flex-start;
-}
-*/
-
 /* The Overlay (background) */
 
 .overlay {
@@ -142,8 +106,7 @@ img {
   z-index: 1; /* Sit on top */
   left: 0;
   bottom: 0;
-  background-color: #cacbff; /* Black fallback color */
-  /*background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  background-color: #dddefc;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -154,7 +117,7 @@ img {
   top: 25%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
-  margin-top: 100px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: -80px;
 }
 
 /* The navigation links inside the overlay */
@@ -191,4 +154,125 @@ img {
     top: 15px;
     right: 35px;
   }
+}
+
+.closebtn {
+  background-image: url("image/cross.png");
+  background-size: 35px 35px;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*----------------------style the overlay title section------------------------------*/
+
+/* style the sushi title name */
+
+.sushiname {
+  color: #5d5fef;
+  font-family: Rajdhani;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+/* style the sound button */
+
+.sound {
+  background-image: url("image/sound.png");
+  background-size: 18px 18px;
+  border: none;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+/* style the japanese title */
+
+.japanesetitle {
+  display: flex;
+  padding-left: 12px;
+  margin-right: -4px;
+}
+
+#japanese {
+  color: #5d5fef;
+  font-family: Rajdhani;
+  font-size: 33px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.wordstitle {
+  display: flex;
+}
+
+/* style the title image */
+
+.overlaytitle img {
+  width: 88px;
+  height: 47px;
+}
+
+/* style the title layout */
+
+.overlaytitle {
+  display: flex;
+  justify-content: center;
+}
+/*----------------------style the overlay recipe section------------------------------*/
+
+ul.ingredients,
+.recipecontent {
+  list-style-type: none;
+  text-align: left;
+  color: #5d5fef;
+  font-family: Rajdhani;
+  font-size: 16px;
+  padding: 4px 0 0 32px;
+  margin: 0;
+  width: 430px;
+}
+
+.recipetitle {
+  color: #5d5fef;
+  font-family: Rajdhani;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 32px 0 60px;
+  width: 100px;
+  text-align: right;
+}
+
+.ingredientsection,
+.recipesection {
+  display: flex;
+}
+
+.vl1 {
+  border-left: 1px solid #5d5fef;
+  height: 120px;
+  margin-top: 6px;
+}
+
+.vl2 {
+  border-left: 1px solid #5d5fef;
+  height: 330px;
+}
+
+.bodycontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px 20px;
+}
+
+.recipecontent li {
+  padding-bottom: 12px;
 }
