@@ -27,7 +27,7 @@
   
     
     
-     <button type="button" class="collapsible">
+     <button type="button" class="collapsible" onclick= "openTamago()" >
       <div class="sushicard" >
        <span id="hidden">tamago :)</span>
         <img src="image/tamago.png" alt="tamago sushi">
@@ -44,7 +44,7 @@
     </button>
     
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick="openHamachi()" >
        <div class="sushicard" >
          <span id="hidden">hamachi!</span>
          <img src="image/hamachi.png" alt="hamachi sushi" >
@@ -52,7 +52,7 @@
         </div>
     </button>
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick="openEbi()" >
         <div class="sushicard" >
           <span id="hidden">I am ebi ;)</span>
           <img src="image/ebi.png" alt="ebi sushi">
@@ -60,7 +60,7 @@
         </div>
     </button>
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible"  onclick="openHokkigai()">
         <div class="sushicard" >
           <span id="hidden">hokkigai!</span>
           <img src="image/hokkigai.png" alt="hokkigai sushi" >
@@ -76,7 +76,7 @@
       </div>
     </button> 
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick= "openSaba()"   >
       <div class="sushicard" >
        <span id="hidden">saba here!</span>
        <img src="image/saba.png" alt="saba sushi">
@@ -84,17 +84,15 @@
      </div>
   </button>
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick= "openKani()"  >  
         <div class="sushicard" >
          <span id="hidden">I am kani!</span>
          <img src="image/kani.png" alt="kani sushi" >
          <p>kani</p>
         </div>
     </button>
-
-
       
-    <button type="button" class="collapsible">  
+    <button type="button" class="collapsible" onclick= "openAnago()"  >  
         <div class="sushicard" >
         <span id="hidden">anago :)</span>
          <img id=anago src="image/anago.png" alt="anago sushi">
@@ -102,7 +100,7 @@
        </div>
     </button>
 
-    <button type="button" class="collapsible">  
+    <button type="button" class="collapsible" onclick= "openIkura()"  >  
        <div class="sushicard" >
          <span id="hidden">ikura :P</span>
          <img src="image/ikura.png" alt="ikura sushi">
@@ -110,7 +108,7 @@
        </div>
     </button>
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick= "openFutomaki()"  >
         <div class="sushicard" >
          <span id="hidden">futomaki :)</span>
          <img src="image/futomaki.png" alt="futomaki sushi">
@@ -118,7 +116,7 @@
         </div>
     </button>
 
-    <button type="button" class="collapsible">
+    <button type="button" class="collapsible" onclick= "openPhiladelphia()" >
        <div class="sushicard" >
          <span id="hidden">philadelphia!</span>
          <img src="image/philadephia.png" alt="philadelphia sushi">
@@ -134,104 +132,109 @@
 
 
 
-<!----------------- Tako Overlay Page ------------------->
-         
-    <div id="overlay-tako" class="overlay">
-
-    <!-- Button: to close the overlay navigation -->
-           
-    <button class="closebtn" onclick="closeTako()"></button>
-      
-    <!--Content: Tako -->
-          <div class="overlay-content" id="tako">
 
 
-            <!-- Overlay title section -->
-            <div class="overlaytitle"> 
 
-                
+     <!--------------- 00 Tamago Overlay Page ------------------>
+     <div id="overlay-tamago" class="overlay">
 
-
-              <img src="image/tako.png" alt="tako sushi">
-              
-               <div class="wordstitle">
-                 <span class="sushiname">Tako sushi</span> 
-                   <div class="japanesetitle">
-                      <span id="japanese">だから寿司</span>
-                      <audio id="player" src="voice/tako_sushi.m4a"></audio>
-                      <button class="sound"></button>
-
-                   </div>
-               </div>
-                 <img src="image/tako.png" alt="tako sushi">
-
-        
-
-            </div> 
-
-            <!------- Overlay recipe section ---------->
-
-            <div class="bodycontainer">
-
-                <!-- recipe section: ingredient list -->
-              <div class="ingredientsection">
-
-                  <span class="recipetitle">Ingredients:</span>
-
-                  <div class="vl1"></div>
-
-                  <ul class="ingredients">
-                      <li >frozen octopus  </li>
-                      <li > Kombu (Japanese kelp)  </li>
-                      <li > Daikon (Japanese radish)  </li>
-                      <li >sea salt   </li>
-                      <li >water  </li>
-                  </ul>
+      <!----x ---->
              
-              </div> 
-
-              <!-- recipe section: recipe content -->
+      <button class="closebtn" onclick="closeTamago()"></button>
+        
+      <!----content ----->
+            <div class="overlay-content" id="tamago">
   
-              <div class="recipesection">
+  
+              <!-- Overlay title section -->
+              <div class="overlaytitle"> 
+  
+                  
+                <img src="image/tamago.png" alt="tamago sushi">
+                
+                 <div class="wordstitle">
+                   <span class="sushiname">Tamago sushi</span> 
+                     <div class="japanesetitle">
+                        <span id="japanese">たまご寿司
 
-                <span class="recipetitle">Recipe:</span>
-
-                <div class="vl2"></div>
-
-
-                  <ul class="recipecontent">
-                    <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
-                    <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
-                    <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
-                    <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
-                    <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve as you like. </li>
-                    
-                    
-                   </ul>
-           
+                        </span>
+                        <audio id="player0" src="voice/tamago_sushi.m4a"></audio>
+                        <button class="sound" id="sound0"></button>
+  
+                     </div>
+                 </div>
+                   <img src="image/tamago.png" alt="tamago sushi">
+  
+          
+  
+              </div> 
+  
+              <!------- Overlay recipe section ---------->
+  
+              <div class="bodycontainer">
+  
+                  <!-- recipe section: ingredient list -->
+                <div class="ingredientsection">
+  
+                    <span class="recipetitle">Ingredients:</span>
+  
+                    <div class="vl1"></div>
+  
+                    <ul class="ingredients">
+                        <li >frozen octopus  </li>
+                        <li > Kombu (Japanese kelp)  </li>
+                        <li > Daikon (Japanese radish)  </li>
+                        <li >sea salt   </li>
+                        <li >water  </li>
+                    </ul>
+               
                 </div> 
-
-            </div>
- 
-            <!--
-              <div class="footer">
-                  <span>-Go try it!-</span>
+  
+                <!-- recipe section: recipe content -->
+    
+                <div class="recipesection">
+  
+                  <span class="recipetitle">Recipe:</span>
+  
+                  <div class="vl2"></div>
+  
+  
+                    <ul class="recipecontent">
+                      <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
+                      <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
+                      <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
+                      <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
+                      <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve as you like. </li>
+                      
+                      
+                     </ul>
+             
+                  </div> 
+  
               </div>
-              -->
+   
+              <!--
+                <div class="footer">
+                    <span>-Go try it!-</span>
+                </div>
+                -->
+  
+  
+            </div>
+        
+     </div> 
 
 
-          </div>
+   
       
-</div>   
-      
-   <!--------------- Hirame Overlay Page ------------------>
+   <!--------------- 01 Hirame Overlay Page ------------------>
    <div id="overlay-hirame" class="overlay">
 
-    <!------- Button to close the overlay navigation ----------------->
+    <!---- x ------>
            
     <button class="closebtn" onclick="closeHirame()"></button>
       
-    <!------------- Tako Overlay Content ------------------>
+    <!---content----->
           <div class="overlay-content" id="hirame">
 
 
@@ -239,20 +242,18 @@
             <div class="overlaytitle"> 
 
                 
-
-
-              <img src="image/tako.png" alt="hirame sushi">
+              <img src="image/hirame.png" alt="hirame sushi">
               
                <div class="wordstitle">
                  <span class="sushiname">Hirame sushi</span> 
                    <div class="japanesetitle">
                       <span id="japanese">ひらめ寿司</span>
-                      <audio id="player" src="voice/tako_sushi.m4a"></audio>
-                      <button class="sound"></button>
+                      <audio id="player1" src="voice/test.m4a"></audio>
+                      <button class="sound" id="sound1"></button>
 
                    </div>
                </div>
-                 <img src="image/tako.png" alt="tako sushi">
+                 <img src="image/hirame.png" alt="hirame sushi">
 
         
 
@@ -311,8 +312,370 @@
 
           </div>
       
-</div>    
+   </div>    
       
+
+  <!--------------- 02 Hamachi Overlay Page ------------------>
+  <div id="overlay-hamachi" class="overlay">
+
+    <!---- x --->
+           
+    <button class="closebtn" onclick="closeHamachi()"></button>
+      
+    <!---content----->
+          <div class="overlay-content" id="hamachi">
+
+
+            <!-- Overlay title section -->
+            <div class="overlaytitle"> 
+
+                
+              <img src="image/hamachi.png" alt="hamachi sushi">
+              
+               <div class="wordstitle">
+                 <span class="sushiname">Hamachi sushi</span> 
+                   <div class="japanesetitle">
+                      <span id="japanese">はまち寿司                      </span>
+                      <audio id="player2" src="voice/hamachi_sushi.m4a"></audio>
+                      <button class="sound" id="sound2"></button>
+
+                   </div>
+               </div>
+                 <img src="image/hamachi.png" alt="hamachi sushi">
+
+        
+
+            </div> 
+
+            <!------- Overlay recipe section ---------->
+
+            <div class="bodycontainer">
+
+                <!-- recipe section: ingredient list -->
+              <div class="ingredientsection">
+
+                  <span class="recipetitle">Ingredients:</span>
+
+                  <div class="vl1"></div>
+
+                  <ul class="ingredients">
+                      <li >frozen octopus  </li>
+                      <li > Kombu (Japanese kelp)  </li>
+                      <li > Daikon (Japanese radish)  </li>
+                      <li >sea salt   </li>
+                      <li >water  </li>
+                  </ul>
+             
+              </div> 
+
+              <!-- recipe section: recipe content -->
+  
+              <div class="recipesection">
+
+                <span class="recipetitle">Recipe:</span>
+
+                <div class="vl2"></div>
+
+
+                  <ul class="recipecontent">
+                    <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
+                    <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
+                    <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
+                    <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
+                    <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve as you like. </li>
+                    
+                    
+                   </ul>
+           
+                </div> 
+
+            </div>
+ 
+            <!--
+              <div class="footer">
+                  <span>-Go try it!-</span>
+              </div>
+              -->
+
+
+          </div>
+      
+   </div>    
+
+
+  <!--------------- 03 Ebi Overlay Page ------------------>
+  <div id="overlay-ebi" class="overlay">
+
+    <!----x ---->
+           
+    <button class="closebtn" onclick="closeEbi()"></button>
+      
+    <!---content ---->
+          <div class="overlay-content" id="ebi">
+
+
+            <!-- Overlay title section -->
+            <div class="overlaytitle"> 
+
+                
+              <img src="image/ebi.png" alt="ebi sushi">
+              
+               <div class="wordstitle">
+                 <span class="sushiname">Ebi sushi</span> 
+                   <div class="japanesetitle">
+                      <span id="japanese">えび寿司                      </span>
+                      <audio id="player3" src="voice/ebi_sushi.m4a"></audio>
+                      <button class="sound" id="sound3"></button>
+
+                   </div>
+               </div>
+                 <img src="image/ebi.png" alt="hamachi sushi">
+
+        
+
+            </div> 
+
+            <!------- Overlay recipe section ---------->
+
+            <div class="bodycontainer">
+
+                <!-- recipe section: ingredient list -->
+              <div class="ingredientsection">
+
+                  <span class="recipetitle">Ingredients:</span>
+
+                  <div class="vl1"></div>
+
+                  <ul class="ingredients">
+                      <li >frozen octopus  </li>
+                      <li > Kombu (Japanese kelp)  </li>
+                      <li > Daikon (Japanese radish)  </li>
+                      <li >sea salt   </li>
+                      <li >water  </li>
+                  </ul>
+             
+              </div> 
+
+              <!-- recipe section: recipe content -->
+  
+              <div class="recipesection">
+
+                <span class="recipetitle">Recipe:</span>
+
+                <div class="vl2"></div>
+
+
+                  <ul class="recipecontent">
+                    <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
+                    <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
+                    <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
+                    <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
+                    <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve as you like. </li>
+                    
+                    
+                   </ul>
+           
+                </div> 
+
+            </div>
+ 
+            <!--
+              <div class="footer">
+                  <span>-Go try it!-</span>
+              </div>
+              -->
+
+
+          </div>
+      
+   </div>   
+
+
+     <!--------------- 04 Hokkigai Overlay Page ------------------>
+  <div id="overlay-hokkigai" class="overlay">
+
+    <!----x ---->
+           
+    <button class="closebtn" onclick="closeHokkigai()"></button>
+      
+    <!----content ----->
+          <div class="overlay-content" id="hokkigai">
+
+
+            <!-- Overlay title section -->
+            <div class="overlaytitle"> 
+
+                
+              <img src="image/hokkigai.png" alt="hokkigai sushi">
+              
+               <div class="wordstitle">
+                 <span class="sushiname">Hokkigai sushi</span> 
+                   <div class="japanesetitle">
+                      <span id="japanese">ほっきがい寿司
+                      </span>
+                      <audio id="player4" src="voice/hokkigai_sushi.m4a"></audio>
+                      <button class="sound" id="sound4"></button>
+
+                   </div>
+               </div>
+                 <img src="image/hokkigai.png" alt="hokkigai sushi">
+
+        
+
+            </div> 
+
+            <!------- Overlay recipe section ---------->
+
+            <div class="bodycontainer">
+
+                <!-- recipe section: ingredient list -->
+              <div class="ingredientsection">
+
+                  <span class="recipetitle">Ingredients:</span>
+
+                  <div class="vl1"></div>
+
+                  <ul class="ingredients">
+                      <li >frozen octopus  </li>
+                      <li > Kombu (Japanese kelp)  </li>
+                      <li > Daikon (Japanese radish)  </li>
+                      <li >sea salt   </li>
+                      <li >water  </li>
+                  </ul>
+             
+              </div> 
+
+              <!-- recipe section: recipe content -->
+  
+              <div class="recipesection">
+
+                <span class="recipetitle">Recipe:</span>
+
+                <div class="vl2"></div>
+
+
+                  <ul class="recipecontent">
+                    <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
+                    <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
+                    <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
+                    <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
+                    <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve as you like. </li>
+                    
+                    
+                   </ul>
+           
+                </div> 
+
+            </div>
+ 
+            <!--
+              <div class="footer">
+                  <span>-Go try it!-</span>
+              </div>
+              -->
+
+
+          </div>
+      
+   </div>   
+
+
+     <!----------------- 05 Tako Overlay Page ------------------->
+         
+     <div id="overlay-tako" class="overlay">
+
+      <!-- x -->
+             
+      <button class="closebtn" onclick="closeTako()"></button>
+        
+      <!--Content-->
+            <div class="overlay-content" id="tako">
+  
+  
+              <!-- Overlay title section -->
+              <div class="overlaytitle"> 
+  
+                  
+  
+  
+                <img src="image/tako.png" alt="tako sushi">
+                
+                 <div class="wordstitle">
+                   <span class="sushiname">Tako sushi</span> 
+                     <div class="japanesetitle">
+                        <span id="japanese">だから寿司</span>
+                        <audio id="player5" src="voice/tako_sushi.m4a"></audio>
+                        <button class="sound" id="sound5" ></button>
+  
+                     </div>
+                 </div>
+                   <img src="image/tako.png" alt="tako sushi">
+  
+          
+  
+              </div> 
+  
+              <!------- Overlay recipe section ---------->
+  
+              <div class="bodycontainer">
+  
+                  <!-- recipe section: ingredient list -->
+                <div class="ingredientsection">
+  
+                    <span class="recipetitle">Ingredients:</span>
+  
+                    <div class="vl1"></div>
+  
+                    <ul class="ingredients">
+                        <li >frozen octopus  </li>
+                        <li > Kombu (Japanese kelp)  </li>
+                        <li > Daikon (Japanese radish)  </li>
+                        <li > Sushi Rice/Sushi Vinegar </li>
+                        <li > Water/Salt/Sugar </li>
+                       
+  
+  
+                    </ul>
+               
+                </div> 
+  
+                <!-- recipe section: recipe content -->
+    
+                <div class="recipesection">
+  
+                  <span class="recipetitle">Recipe:</span>
+  
+                  <div class="vl2"></div>
+  
+  
+                    <ul class="recipecontent">
+                      <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
+                      <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
+                      <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
+                      <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
+                      <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve with Sushi rice as you like. </li>
+                      
+                      
+                     </ul>
+             
+                  </div> 
+  
+              </div>
+   
+              <!--
+                <div class="footer">
+                    <span>-Go try it!-</span>
+                </div>
+                -->
+  
+  
+            </div>
+        
+      </div>   
+
+
+
+
     <script src="mainpage.js"></script>
     
   </body>
