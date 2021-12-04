@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 body {
-  background-color: #7879f1;
+  background-color: #5d5fef;
 }
 
 .headline {
@@ -34,7 +34,7 @@ p {
 }
 
 #hidden {
-  color: #7879f1;
+  color: #5d5fef;
   font-family: Rajdhani;
   font-size: 16px;
   font-weight: 600;
@@ -72,7 +72,7 @@ img {
 }
 
 .collapsible {
-  background-color: #7879f1;
+  background-color: #5d5fef;
   border: none;
   padding: 24px 0 0 0;
   transition: all 0.1s ease-in-out;
@@ -106,7 +106,7 @@ img {
   z-index: 1; /* Sit on top */
   left: 0;
   bottom: 0;
-  background-color: #dddefc;
+  background-color: white;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
