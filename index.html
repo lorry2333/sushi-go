@@ -1,1272 +1,1335 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewpoint" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="mainpage.css">
-    <meta charset="utf-8">
-    <title>Sushi Go</title>
-    <link rel="icon" type="image/jpg" href="image/title_logo.png" >
-  </head>
-  <body> 
-    
+
+<head>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mainpage.css">
+  <meta charset="utf-8">
+  <title>Sushi Go</title>
+  <link rel="icon" type="image/jpg" href="image/title_logo.png">
+</head>
+
+<body>
 
 
 
 
-      <!--title of the page-->
-    <div class="headline">
-        <h1>いただきます</h1>
-        <h5>Welcome to the World of Sushi</h5>
-   </div>
+
+  <!--title of the page-->
+  <div class="headline">
+    <h1>いただきます</h1>
+    <h5>Welcome to the World of Sushi</h5>
+  </div>
 
 
-     <!--main section of the page-->
-    <div class="container">
-     <div class="maincontent">
+  <!--main section of the page-->
+  <div class="container">
+    <div class="maincontent">
 
-  
-    
-    
-     <button type="button" class="collapsible" onclick= "openTamago()" >
-      <div class="sushicard" >
-       <span id="hidden">tamago :)</span>
-        <img src="image/tamago.png" alt="tamago sushi">
-        <p>tamago</p>
-      </div>
-   </button>
-    
-    <button type="button" class="collapsible" onclick= "openHirame()" >
-        <div class="sushicard" >
+
+
+
+      <button type="button" class="collapsible" onclick="openTamago()">
+        <div class="sushicard">
+          <span id="hidden">tamago :)</span>
+          <img src="image/tamago.png" alt="tamago sushi">
+          <p>tamago</p>
+        </div>
+      </button>
+
+      <button type="button" class="collapsible" onclick="openHirame()">
+        <div class="sushicard">
           <span id="hidden">hirame :P</span>
-          <img src="image/hirame.png" alt="hirame sushi" >
+          <img src="image/hirame.png" alt="hirame sushi">
           <p>hirame</p>
-       </div>
-    </button>
-    
+        </div>
+      </button>
 
-    <button type="button" class="collapsible" onclick="openHamachi()" >
-       <div class="sushicard" >
-         <span id="hidden">hamachi!</span>
-         <img src="image/hamachi.png" alt="hamachi sushi" >
+
+      <button type="button" class="collapsible" onclick="openHamachi()">
+        <div class="sushicard">
+          <span id="hidden">hamachi!</span>
+          <img src="image/hamachi.png" alt="hamachi sushi">
           <p>hamachi</p>
         </div>
-    </button>
+      </button>
 
-    <button type="button" class="collapsible" onclick="openEbi()" >
-        <div class="sushicard" >
+      <button type="button" class="collapsible" onclick="openEbi()">
+        <div class="sushicard">
           <span id="hidden">I am ebi ;)</span>
           <img src="image/ebi.png" alt="ebi sushi">
-           <p>ebi</p>
+          <p>ebi</p>
         </div>
-    </button>
+      </button>
 
-    <button type="button" class="collapsible"  onclick="openHokkigai()">
-        <div class="sushicard" >
+      <button type="button" class="collapsible" onclick="openHokkigai()">
+        <div class="sushicard">
           <span id="hidden">hokkigai!</span>
-          <img src="image/hokkigai.png" alt="hokkigai sushi" >
+          <img src="image/hokkigai.png" alt="hokkigai sushi">
           <p>hokkigai</p>
         </div>
-    </button>
+      </button>
 
-    <button type="button" class="collapsible" onclick= "openTako()"  >
-      <div class="sushicard" >
-         <span id="hidden">I am tako :)</span>
-         <img src="image/tako.png" alt="tako sushi" >
-         <p>tako</p>
-      </div>
-    </button> 
-
-    <button type="button" class="collapsible" onclick= "openSaba()"   >
-      <div class="sushicard" >
-       <span id="hidden">saba here!</span>
-       <img src="image/saba.png" alt="saba sushi">
-       <p>saba</p>
-     </div>
-  </button>
-
-    <button type="button" class="collapsible" onclick= "openKani()"  >  
-        <div class="sushicard" >
-         <span id="hidden">I am kani!</span>
-         <img src="image/kani.png" alt="kani sushi" >
-         <p>kani</p>
+      <button type="button" class="collapsible" onclick="openTako()">
+        <div class="sushicard">
+          <span id="hidden">I am tako :)</span>
+          <img src="image/tako.png" alt="tako sushi">
+          <p>tako</p>
         </div>
-    </button>
-      
-    <button type="button" class="collapsible" onclick= "openAnago()"  >  
-        <div class="sushicard" >
-        <span id="hidden">anago :)</span>
-         <img id=anago src="image/anago.png" alt="anago sushi">
-         <p>anago</p>
-       </div>
-    </button>
+      </button>
 
-    <button type="button" class="collapsible" onclick= "openIkura()"  >  
-       <div class="sushicard" >
-         <span id="hidden">ikura :P</span>
-         <img src="image/ikura.png" alt="ikura sushi">
-         <p>ikura</p>
-       </div>
-    </button>
-
-    <button type="button" class="collapsible" onclick= "openFutomaki()"  >
-        <div class="sushicard" >
-         <span id="hidden">futomaki :)</span>
-         <img src="image/futomaki.png" alt="futomaki sushi">
-         <p>futomaki</p>
+      <button type="button" class="collapsible" onclick="openSaba()">
+        <div class="sushicard">
+          <span id="hidden">saba here!</span>
+          <img src="image/saba.png" alt="saba sushi">
+          <p>saba</p>
         </div>
-    </button>
+      </button>
 
-    <button type="button" class="collapsible" onclick= "openPhiladelphia()" >
-       <div class="sushicard" >
-         <span id="hidden">philadelphia!</span>
-         <img src="image/philadelphia.png" alt="philadelphia sushi">
-         <p>philadelphia</p>
-       </div>
-    </button>
- 
-     </div>
+      <button type="button" class="collapsible" onclick="openKani()">
+        <div class="sushicard">
+          <span id="hidden">I am kani!</span>
+          <img src="image/kani.png" alt="kani sushi">
+          <p>kani</p>
+        </div>
+      </button>
+
+      <button type="button" class="collapsible" onclick="openAnago()">
+        <div class="sushicard">
+          <span id="hidden">anago :)</span>
+          <img id=anago src="image/anago.png" alt="anago sushi">
+          <p>anago</p>
+        </div>
+      </button>
+
+      <button type="button" class="collapsible" onclick="openIkura()">
+        <div class="sushicard">
+          <span id="hidden">ikura :P</span>
+          <img src="image/ikura.png" alt="ikura sushi">
+          <p>ikura</p>
+        </div>
+      </button>
+
+      <button type="button" class="collapsible" onclick="openFutomaki()">
+        <div class="sushicard">
+          <span id="hidden">futomaki :)</span>
+          <img src="image/futomaki.png" alt="futomaki sushi">
+          <p>futomaki</p>
+        </div>
+      </button>
+
+      <button type="button" class="collapsible" onclick="openPhiladelphia()">
+        <div class="sushicard">
+          <span id="hidden">philadelphia!</span>
+          <img src="image/philadelphia.png" alt="philadelphia sushi">
+          <p>philadelphia</p>
+        </div>
+      </button>
+
     </div>
-
-   
-  
+  </div>
 
 
 
 
 
 
-     <!--------------- 00 Tamago Overlay Page ------------------>
-     <div id="overlay-tamago" class="overlay">
 
-      <!----x ---->
-             
-      <button class="closebtn" onclick="closeTamago()"></button>
-        
-      <!----content ----->
-            <div class="overlay-content" id="tamago">
-  
-  
-              <!-- Overlay title section -->
-              <div class="overlaytitle"> 
-  
-                  
-                <img src="image/tamago.png" alt="tamago sushi">
-                
-                 <div class="wordstitle">
-                   <span class="sushiname">Tamago sushi</span> 
-                     <div class="japanesetitle">
-                        <span id="japanese">たまご寿司
 
-                        </span>
-                        <audio id="player0" src="voice/tamago_sushi.m4a"></audio>
-                        <button class="sound" id="sound0"></button>
-  
-                     </div>
-                 </div>
-                   <img src="image/tamago.png" alt="tamago sushi">
-  
-          
-  
-              </div> 
-  
-              <!------- Overlay recipe section ---------->
-  
-              <div class="bodycontainer">
-  
-                  <!-- recipe section: ingredient list -->
-                <div class="ingredientsection">
-  
-                    <span class="recipetitle">Ingredients:</span>
-  
-                    <div class="vl1"></div>
-  
-                    <ul class="ingredients">
-                        <li >Egg  </li>
-                        <li > Mirin (rice wine) </li>
-                        <li > Nori (dried edible seaweed) </li>
-                        <li > Sushi rice/Sushi vinegar </li>
-                        <li >Water/Salt/Sugar  </li>
-                      
-                    </ul>
-               
-                </div> 
-  
-                <!-- recipe section: recipe content -->
-    
-                <div class="recipesection">
-  
-                  <span class="recipetitle">Recipe:</span>
-  
-                  <div class="vl2"></div>
-  
-  
-                    <ul class="recipecontent">
-                      <li > <strong>Step 1:</strong> Combine water (2 Tbsp), sugar, mirin, salt, and rice vinegar (1/4 tsp). Mix until sugar is dissolved. Add eggs, and mix very well. </li>
-                      <li ><strong>Step 2:</strong>  Heat a pan at medium temperature and add oild. Pour a thin layer of the egg mixture in the pan, tilting to cover the bottom of the pan. </li>
-                      <li ><strong>Step 3:</strong> Repeat adding egg to the pan and rolling back and forth until the egg is used up. Remove from the pan and cool completely. </li>
-                      <li ><strong>Step 4:</strong> Cut the egg log in half. Then slice 1/4" thick vertical slices. Cut Nori into 5" x 1/3" strips  </li>
-                      <li ><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball with a slice of egg, and wrap around with Nori strips. </li>
-                      
-                      
-                     </ul>
-             
-                  </div> 
-  
-              </div>
-   
-              <!--
+
+  <!--------------- 00 Tamago Overlay Page ------------------>
+  <div id="overlay-tamago" class="overlay">
+
+    <!----x ---->
+
+    <button class="closebtn" onclick="closeTamago()"></button>
+
+    <!----content ----->
+    <div class="overlay-content" id="tamago">
+
+
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
+
+
+        <img src="image/tamago.png" alt="tamago sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Tamago sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">たまご寿司
+
+            </span>
+            <audio id="player0" src="voice/tamago_sushi.m4a"></audio>
+            <button class="sound" id="sound0"></button>
+
+          </div>
+        </div>
+        <img src="image/tamago.png" alt="tamago sushi">
+
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Egg </li>
+            <li> Mirin (rice wine) </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Combine water (2 Tbsp), sugar, mirin, salt, and rice vinegar (1/4 tsp). Mix
+              until sugar is dissolved. Add eggs, and mix very well. </li>
+            <li><strong>Step 2:</strong> Heat a pan at medium temperature and add oild. Pour a thin layer of the egg
+              mixture in the pan, tilting to cover the bottom of the pan. </li>
+            <li><strong>Step 3:</strong> Repeat adding egg to the pan and rolling back and forth until the egg is used
+              up. Remove from the pan and cool completely. </li>
+            <li><strong>Step 4:</strong> Cut the egg log in half. Then slice 1/4" thick vertical slices. Cut Nori into
+              5" x 1/3" strips </li>
+            <li><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball
+              with a slice of egg, and wrap around with Nori strips. </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
                 <div class="footer">
                     <span>-Go try it!-</span>
                 </div>
                 -->
-  
-  
-            </div>
-        
-     </div> 
 
 
-   
-      
-   <!--------------- 01 Hirame Overlay Page ------------------>
-   <div id="overlay-hirame" class="overlay">
+    </div>
+
+  </div>
+
+
+
+
+  <!--------------- 01 Hirame Overlay Page ------------------>
+  <div id="overlay-hirame" class="overlay">
 
     <!---- x ------>
-           
+
     <button class="closebtn" onclick="closeHirame()"></button>
-      
+
     <!---content----->
-          <div class="overlay-content" id="hirame">
+    <div class="overlay-content" id="hirame">
 
 
-            <!-- Overlay title section -->
-            <div class="overlaytitle"> 
-
-                
-              <img src="image/hirame.png" alt="hirame sushi">
-              
-               <div class="wordstitle">
-                 <span class="sushiname">Hirame sushi</span> 
-                   <div class="japanesetitle">
-                      <span id="japanese">ひらめ寿司</span>
-                      <audio id="player1" src="voice/hirame_sushi.m4a"></audio>
-                      <button class="sound" id="sound1"></button>
-
-                   </div>
-               </div>
-                 <img src="image/hirame.png" alt="hirame sushi">
-
-        
-
-            </div> 
-
-            <!------- Overlay recipe section ---------->
-
-            <div class="bodycontainer">
-
-                <!-- recipe section: ingredient list -->
-              <div class="ingredientsection">
-
-                  <span class="recipetitle">Ingredients:</span>
-
-                  <div class="vl1"></div>
-
-                  <ul class="ingredients">
-                      <li > Hirame fillet  </li>
-                     
-                      <li > Sushi Rice/Sushi Vinegar  </li>
-                      <li > Water/Salt/Sugar </li>
-                     
-                  </ul>
-
-             
-              </div> 
-
-              <!-- recipe section: recipe content -->
-  
-              <div class="recipesection">
-
-                <span class="recipetitle">Recipe:</span>
-
-                <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                  <ul class="recipecontent">
-                    <li > <strong>Step 1:</strong> First, descale the fish. This will be difficult as the scales are fine and numerous. After, wash it thoroughly. </li>
-                    <li ><strong>Step 2:</strong>  At the pectoral fin, make a small cut on both sides and cut along the head. Then, slit the belly and remove the entrails by scraping them out, along with the dark blood.  </li>
-                    <li ><strong>Step 3:</strong> Rinse, and cut along the fin. Remove the bones along the belly by slicing them off at a right angle to the fish. Remove the fins as well. </li>
-                    <li ><strong>Step 4:</strong> Cut the fillet into 1/10 inch (3mm) slices by slanting the knife to the right and starting from the left.   </li>
-                    <li ><strong>Step 5:</strong> Cook sushi rice and add sushi vinegar to it. Put Hirame on sushi rice and serve as you like </li>
-                    
-                    
-                   </ul>
-           
-                </div> 
+        <img src="image/hirame.png" alt="hirame sushi">
 
-            </div>
- 
-            <!--
+        <div class="wordstitle">
+          <span class="sushiname">Hirame sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">ひらめ寿司</span>
+            <audio id="player1" src="voice/hirame_sushi.m4a"></audio>
+            <button class="sound" id="sound1"></button>
+
+          </div>
+        </div>
+        <img src="image/hirame.png" alt="hirame sushi">
+
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li> Hirame fillet </li>
+
+            <li> Sushi Rice/Sushi Vinegar </li>
+            <li> Water/Salt/Sugar </li>
+
+          </ul>
+
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> First, descale the fish. This will be difficult as the scales are fine and
+              numerous. After, wash it thoroughly. </li>
+            <li><strong>Step 2:</strong> At the pectoral fin, make a small cut on both sides and cut along the head.
+              Then, slit the belly and remove the entrails by scraping them out, along with the dark blood. </li>
+            <li><strong>Step 3:</strong> Rinse, and cut along the fin. Remove the bones along the belly by slicing them
+              off at a right angle to the fish. Remove the fins as well. </li>
+            <li><strong>Step 4:</strong> Cut the fillet into 1/10 inch (3mm) slices by slanting the knife to the right
+              and starting from the left. </li>
+            <li><strong>Step 5:</strong> Cook sushi rice and add sushi vinegar to it. Put Hirame on sushi rice and serve
+              as you like </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
               <div class="footer">
                   <span>-Go try it!-</span>
               </div>
               -->
 
 
-          </div>
-      
-   </div>    
-      
+    </div>
+
+  </div>
+
 
   <!--------------- 02 Hamachi Overlay Page ------------------>
   <div id="overlay-hamachi" class="overlay">
 
     <!---- x --->
-           
+
     <button class="closebtn" onclick="closeHamachi()"></button>
-      
+
     <!---content----->
-          <div class="overlay-content" id="hamachi">
+    <div class="overlay-content" id="hamachi">
 
 
-            <!-- Overlay title section -->
-            <div class="overlaytitle"> 
-
-                
-              <img src="image/hamachi.png" alt="hamachi sushi">
-              
-               <div class="wordstitle">
-                 <span class="sushiname">Hamachi sushi</span> 
-                   <div class="japanesetitle">
-                      <span id="japanese">はまち寿司                      </span>
-                      <audio id="player2" src="voice/hamachi_sushi.m4a"></audio>
-                      <button class="sound" id="sound2"></button>
-
-                   </div>
-               </div>
-                 <img src="image/hamachi.png" alt="hamachi sushi">
-
-        
-
-            </div> 
-
-            <!------- Overlay recipe section ---------->
-
-            <div class="bodycontainer">
-
-                <!-- recipe section: ingredient list -->
-              <div class="ingredientsection">
-
-                  <span class="recipetitle">Ingredients:</span>
-
-                  <div class="vl1"></div>
-
-                  <ul class="ingredients">
-                      <li >Hamachi fillet  </li>
-                      <li > Shiso cress leaves  </li>
-                      <li > Sushi rice/Sushi vinegar </li>
-                      <li >Water/Salt/Sugar  </li>
-                  </ul>
-             
-              </div> 
-
-              <!-- recipe section: recipe content -->
-  
-              <div class="recipesection">
-
-                <span class="recipetitle">Recipe:</span>
-
-                <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                  <ul class="recipecontent">
-                    <li > <strong>Step 1:</strong> Slice the hamachi into thin strips using a very sharp knife. </li>
-                    <li ><strong>Step 2:</strong> Cook sushi rice. Place the vinegar, salt and sugar in a large bowl and mix well. Microwave the mixture for 10 seconds or until warmed through. Then mix the rice with sushi vinegar. </li>
-                    <li ><strong>Step 3:</strong> To assemble the sushi, measure out 10 portions of sushi rice, each weighing 12g. Using the palm of your hand, form the rice balls into even sized oblongs and place on a metal tray. </li>
-                    <li ><strong>Step 4:</strong> Lay the hamachi slices on top of the rice and sear with a blowtorch until lightly charred. Once seared, divide the nigiri evenly between serving dishes   </li>
-                    <li ><strong>Step 5:</strong> To serve, garnish each nigiri with a shiso cress leaf. Place a little sushi ginger and wasabi on each plate and serve immediately </li>
-                    
-                    
-                   </ul>
-           
-                </div> 
+        <img src="image/hamachi.png" alt="hamachi sushi">
 
-            </div>
- 
-            <!--
+        <div class="wordstitle">
+          <span class="sushiname">Hamachi sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">はまち寿司 </span>
+            <audio id="player2" src="voice/hamachi_sushi.m4a"></audio>
+            <button class="sound" id="sound2"></button>
+
+          </div>
+        </div>
+        <img src="image/hamachi.png" alt="hamachi sushi">
+
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Hamachi fillet </li>
+            <li> Shiso cress leaves </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Slice the hamachi into thin strips using a very sharp knife. </li>
+            <li><strong>Step 2:</strong> Cook sushi rice. Place the vinegar, salt and sugar in a large bowl and mix
+              well. Microwave the mixture for 10 seconds or until warmed through. Then mix the rice with sushi vinegar.
+            </li>
+            <li><strong>Step 3:</strong> To assemble the sushi, measure out 10 portions of sushi rice, each weighing
+              12g. Using the palm of your hand, form the rice balls into even sized oblongs and place on a metal tray.
+            </li>
+            <li><strong>Step 4:</strong> Lay the hamachi slices on top of the rice and sear with a blowtorch until
+              lightly charred. Once seared, divide the nigiri evenly between serving dishes </li>
+            <li><strong>Step 5:</strong> To serve, garnish each nigiri with a shiso cress leaf. Place a little sushi
+              ginger and wasabi on each plate and serve immediately </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
               <div class="footer">
                   <span>-Go try it!-</span>
               </div>
               -->
 
 
-          </div>
-      
-   </div>    
+    </div>
+
+  </div>
 
 
   <!--------------- 03 Ebi Overlay Page ------------------>
   <div id="overlay-ebi" class="overlay">
 
     <!----x ---->
-           
+
     <button class="closebtn" onclick="closeEbi()"></button>
-      
+
     <!---content ---->
-          <div class="overlay-content" id="ebi">
+    <div class="overlay-content" id="ebi">
 
 
-            <!-- Overlay title section -->
-            <div class="overlaytitle"> 
-
-                
-              <img src="image/ebi.png" alt="ebi sushi">
-              
-               <div class="wordstitle">
-                 <span class="sushiname">Ebi sushi</span> 
-                   <div class="japanesetitle">
-                      <span id="japanese">えび寿司                      </span>
-                      <audio id="player3" src="voice/ebi_sushi.m4a"></audio>
-                      <button class="sound" id="sound3"></button>
-
-                   </div>
-               </div>
-                 <img src="image/ebi.png" alt="hamachi sushi">
-
-        
-
-            </div> 
-
-            <!------- Overlay recipe section ---------->
-
-            <div class="bodycontainer">
-
-                <!-- recipe section: ingredient list -->
-              <div class="ingredientsection">
-
-                  <span class="recipetitle">Ingredients:</span>
-
-                  <div class="vl1"></div>
-
-                  <ul class="ingredients">
-                      <li >Black tiger shrimp </li>
-                      <li > Bamboo skewers </li>
-                      <li > Sushi rice/Sushi vinegar </li>
-                      <li >Water/Salt/Sugar  </li>
-                  </ul>
-             
-              </div> 
-
-              <!-- recipe section: recipe content -->
-  
-              <div class="recipesection">
-
-                <span class="recipetitle">Recipe:</span>
-
-                <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                  <ul class="recipecontent">
-                    <li > <strong>Step 1:</strong> Using your thumb on the spine and your fingers on the feet, straighten out the shrimp. Take a skewer and pierce the shrimp from head to tail.
-                    </li>
-                    <li ><strong>Step 2:</strong>  Boil the shrimp for about 60 – 90 seconds. You want the shrimp to feel firm.
-                    </li>
-                    <li ><strong>Step 3:</strong> After the shrimp have turned a nice orange/white color and have become firm, take them out and put them into an ice bath (Ice and water in a bowl).  </li>
-                    <li ><strong>Step 4:</strong> Once the shrimp are cold, peel off the shells and cut the shrimp from head to tail, making sure to only cut about half way down.
-                    </li>
-                    <li ><strong>Step 5:</strong> Put the shrimp on top of cooked sushi rice and serve as you like. </li>
-                    
-                    
-                   </ul>
-           
-                </div> 
+        <img src="image/ebi.png" alt="ebi sushi">
 
-            </div>
- 
-            <!--
+        <div class="wordstitle">
+          <span class="sushiname">Ebi sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">えび寿司 </span>
+            <audio id="player3" src="voice/ebi_sushi.m4a"></audio>
+            <button class="sound" id="sound3"></button>
+
+          </div>
+        </div>
+        <img src="image/ebi.png" alt="hamachi sushi">
+
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Black tiger shrimp </li>
+            <li> Bamboo skewers </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Using your thumb on the spine and your fingers on the feet, straighten out the
+              shrimp. Take a skewer and pierce the shrimp from head to tail.
+            </li>
+            <li><strong>Step 2:</strong> Boil the shrimp for about 60 – 90 seconds. You want the shrimp to feel firm.
+            </li>
+            <li><strong>Step 3:</strong> After the shrimp have turned a nice orange/white color and have become firm,
+              take them out and put them into an ice bath (Ice and water in a bowl). </li>
+            <li><strong>Step 4:</strong> Once the shrimp are cold, peel off the shells and cut the shrimp from head to
+              tail, making sure to only cut about half way down.
+            </li>
+            <li><strong>Step 5:</strong> Put the shrimp on top of cooked sushi rice and serve as you like. </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
               <div class="footer">
                   <span>-Go try it!-</span>
               </div>
               -->
 
 
-          </div>
-      
-   </div>   
+    </div>
+
+  </div>
 
 
-   <!--------------- 04 Hokkigai Overlay Page ------------------>
+  <!--------------- 04 Hokkigai Overlay Page ------------------>
   <div id="overlay-hokkigai" class="overlay">
 
     <!----x ---->
-           
+
     <button class="closebtn" onclick="closeHokkigai()"></button>
-      
+
     <!----content ----->
-          <div class="overlay-content" id="hokkigai">
+    <div class="overlay-content" id="hokkigai">
 
 
-            <!-- Overlay title section -->
-            <div class="overlaytitle"> 
-
-                
-              <img src="image/hokkigai.png" alt="hokkigai sushi">
-              
-               <div class="wordstitle">
-                 <span class="sushiname">Hokkigai sushi</span> 
-                   <div class="japanesetitle">
-                      <span id="japanese">ほっきがい寿司
-                      </span>
-                      <audio id="player4" src="voice/hokkigai_sushi.m4a"></audio>
-                      <button class="sound" id="sound4"></button>
-
-                   </div>
-               </div>
-                 <img src="image/hokkigai.png" alt="hokkigai sushi">
-
-        
-
-            </div> 
-
-            <!------- Overlay recipe section ---------->
-
-            <div class="bodycontainer">
-
-                <!-- recipe section: ingredient list -->
-              <div class="ingredientsection">
-
-                  <span class="recipetitle">Ingredients:</span>
-
-                  <div class="vl1"></div>
-
-                  <ul class="ingredients">
-                      <li >Surf clam  </li>
-                      <li > Nori (dried edible seaweed) </li>
-                        <li >Sushi rice/Sushi vinegar </li>
-                        <li >Water/Salt/Sugar  </li>
-                  </ul>
-             
-              </div> 
-
-              <!-- recipe section: recipe content -->
-  
-              <div class="recipesection">
-
-                <span class="recipetitle">Recipe:</span>
-
-                <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                  <ul class="recipecontent">
-                    <li > <strong>Step 1:</strong> Holding the clam firmly, insert the tip of the knife and sever the muscle holding the shell together. 
-                    </li>
-                    <li ><strong>Step 2:</strong>  Cut the muscles holding the shell halves together. Put the shelled clams in a colander placed in a bowl, and rinse 3 times.   </li>
-                    <li ><strong>Step 3:</strong> Slice in half horizontally. Make sure that you retain a bit of the black guts as you rinse the clams. This black part has a lot of flavor and umami, so I recommend that you don't take it all off.  </li>
-                    <li ><strong>Step 4:</strong> Wash the clams one by one while rubbing them with your hands. Change the water at least 10 times as you wash them. The clams are ready when there is no more sand in the bowl.   </li>
-                    <li ><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball with a slice of egg, and wrap around with Nori strips. </li>
-                    
-                    
-                   </ul>
-           
-                </div> 
+        <img src="image/hokkigai.png" alt="hokkigai sushi">
 
-            </div>
- 
-            <!--
+        <div class="wordstitle">
+          <span class="sushiname">Hokkigai sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">ほっきがい寿司
+            </span>
+            <audio id="player4" src="voice/hokkigai_sushi.m4a"></audio>
+            <button class="sound" id="sound4"></button>
+
+          </div>
+        </div>
+        <img src="image/hokkigai.png" alt="hokkigai sushi">
+
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Surf clam </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li>Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Holding the clam firmly, insert the tip of the knife and sever the muscle
+              holding the shell together.
+            </li>
+            <li><strong>Step 2:</strong> Cut the muscles holding the shell halves together. Put the shelled clams in a
+              colander placed in a bowl, and rinse 3 times. </li>
+            <li><strong>Step 3:</strong> Slice in half horizontally. Make sure that you retain a bit of the black guts
+              as you rinse the clams. This black part has a lot of flavor and umami, so I recommend that you don't take
+              it all off. </li>
+            <li><strong>Step 4:</strong> Wash the clams one by one while rubbing them with your hands. Change the water
+              at least 10 times as you wash them. The clams are ready when there is no more sand in the bowl. </li>
+            <li><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball
+              with a slice of egg, and wrap around with Nori strips. </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
               <div class="footer">
                   <span>-Go try it!-</span>
               </div>
               -->
 
 
+    </div>
+
+  </div>
+
+
+  <!----------------- 05 Tako Overlay Page ------------------->
+
+  <div id="overlay-tako" class="overlay">
+
+    <!-- x -->
+
+    <button class="closebtn" onclick="closeTako()"></button>
+
+    <!--Content-->
+    <div class="overlay-content" id="tako">
+
+
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
+
+
+
+
+        <img src="image/tako.png" alt="tako sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Tako sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">だから寿司</span>
+            <audio id="player5" src="voice/tako_sushi.m4a"></audio>
+            <button class="sound" id="sound5"></button>
+
           </div>
-      
-   </div>   
+        </div>
+        <img src="image/tako.png" alt="tako sushi">
 
 
-   <!----------------- 05 Tako Overlay Page ------------------->
-         
-     <div id="overlay-tako" class="overlay">
 
-      <!-- x -->
-             
-      <button class="closebtn" onclick="closeTako()"></button>
-        
-      <!--Content-->
-            <div class="overlay-content" id="tako">
-  
-  
-              <!-- Overlay title section -->
-              <div class="overlaytitle"> 
-  
-                  
-  
-  
-                <img src="image/tako.png" alt="tako sushi">
-                
-                 <div class="wordstitle">
-                   <span class="sushiname">Tako sushi</span> 
-                     <div class="japanesetitle">
-                        <span id="japanese">だから寿司</span>
-                        <audio id="player5" src="voice/tako_sushi.m4a"></audio>
-                        <button class="sound" id="sound5" ></button>
-  
-                     </div>
-                 </div>
-                   <img src="image/tako.png" alt="tako sushi">
-  
-          
-  
-              </div> 
-  
-              <!------- Overlay recipe section ---------->
-  
-              <div class="bodycontainer">
-  
-                  <!-- recipe section: ingredient list -->
-                <div class="ingredientsection">
-  
-                    <span class="recipetitle">Ingredients:</span>
-  
-                    <div class="vl1"></div>
-  
-                    <ul class="ingredients">
-                        <li >Frozen octopus  </li>
-                        <li > Kombu (Japanese kelp)  </li>
-                        <li > Daikon (Japanese radish)  </li>
-                        <li > Sushi Rice/Sushi Vinegar </li>
-                        <li > Water/Salt/Sugar </li>
-                       
-  
-  
-                    </ul>
-               
-                </div> 
-  
-                <!-- recipe section: recipe content -->
-    
-                <div class="recipesection">
-  
-                  <span class="recipetitle">Recipe:</span>
-  
-                  <div class="vl2"></div>
-  
-  
-                    <ul class="recipecontent">
-                      <li > <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and about 2 oz of sea salt. Bring to a boil. </li>
-                      <li ><strong>Step 2:</strong>  Thaw octopus in cold water, then drain well.  </li>
-                      <li ><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then return the head sac to it’s correct shape. </li>
-                      <li ><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes.   </li>
-                      <li ><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus from the water and let it dry a bit. Slice on an angle, then serve with Sushi rice as you like. </li>
-                      
-                      
-                     </ul>
-             
-                  </div> 
-  
-              </div>
-   
-              <!--
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Frozen octopus </li>
+            <li> Kombu (Japanese kelp) </li>
+            <li> Daikon (Japanese radish) </li>
+            <li> Sushi Rice/Sushi Vinegar </li>
+            <li> Water/Salt/Sugar </li>
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Put on a pot of water, about a gallon, and add a good sized piece of kombu and
+              about 2 oz of sea salt. Bring to a boil. </li>
+            <li><strong>Step 2:</strong> Thaw octopus in cold water, then drain well. </li>
+            <li><strong>Step 3:</strong> Knead the octopus with fresh grated/chopped daikon radish and sea salt. While
+              doing that, turn the head inside out and check for any leftover viscera. Remove any that’s found, then
+              return the head sac to it’s correct shape. </li>
+            <li><strong>Step 4:</strong> Dunk the octopus into the boiling water a few times until the tentacles curl
+              up. Lower the heat a bit, and then simmer the octopus for about 5-10 minutes. </li>
+            <li><strong>Step 5:</strong> Let the octopus cool in the liquid for at least an hour. Remove the octopus
+              from the water and let it dry a bit. Slice on an angle, then serve with Sushi rice as you like. </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
                 <div class="footer">
                     <span>-Go try it!-</span>
                 </div>
                 -->
-  
-  
-            </div>
-        
-      </div>   
-
- <!----------------- 06 Saba Overlay Page ------------------->
-         
- <div id="overlay-saba" class="overlay">
-
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closeSaba()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="saba">
 
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    </div>
 
-              
+  </div>
 
+  <!----------------- 06 Saba Overlay Page ------------------->
 
-            <img src="image/saba.png" alt="saba sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Saba sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">さば寿司</span>
-                    <audio id="player6" src="voice/saba_sushi.m4a"></audio>
-                    <button class="sound" id="sound6" ></button>
+  <div id="overlay-saba" class="overlay">
 
-                 </div>
-             </div>
-               <img src="image/saba.png" alt="saba sushi">
+    <!-- x -->
 
-      
+    <button class="closebtn" onclick="closeSaba()"></button>
 
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                    <li >Fish's worth fresh mackerel </li>
-                    <li > Sushi rice/Sushi vinegar </li>
-                    <li >Water/Salt/Sugar  </li>
-                
-                   
+    <!--Content-->
+    <div class="overlay-content" id="saba">
 
 
-                </ul>
-           
-            </div> 
-
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> Rub the fillets with sugar, place in a tray, cover with plastic wrap and refrigerate for 2 hours. Rinse off the fillets. Rub salt and cover with plastic wrap and refrigerate for 3 hours. </li>
-                  <li ><strong>Step 2:</strong>  Rinse off the fillets. Pour the vinegar into the shallow tray with the fillets placed skin side down. Cover with plastic wrap and refrigerate for 4 hours.  </li>
-                  <li ><strong>Step 3:</strong> Peel off the skin. Remove bones and slice off a bit of the fish in the middle that is thicker than the rest.
-                  </li>
-                  <li ><strong>Step 4:</strong> Line a sushi rolling mat with plastic wrap, and place a mackerel fillet on it skin side down. Cover evenly with sushi rice, and roll with the mat.    </li>
-                  <li ><strong>Step 5:</strong>  Secure the mat with elastic bands, leave for 2 hours and cut it into pieces.
-                  </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+
+
+        <img src="image/saba.png" alt="saba sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Saba sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">さば寿司</span>
+            <audio id="player6" src="voice/saba_sushi.m4a"></audio>
+            <button class="sound" id="sound6"></button>
 
           </div>
+        </div>
+        <img src="image/saba.png" alt="saba sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Fish's worth fresh mackerel </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Rub the fillets with sugar, place in a tray, cover with plastic wrap and
+              refrigerate for 2 hours. Rinse off the fillets. Rub salt and cover with plastic wrap and refrigerate for 3
+              hours. </li>
+            <li><strong>Step 2:</strong> Rinse off the fillets. Pour the vinegar into the shallow tray with the fillets
+              placed skin side down. Cover with plastic wrap and refrigerate for 4 hours. </li>
+            <li><strong>Step 3:</strong> Peel off the skin. Remove bones and slice off a bit of the fish in the middle
+              that is thicker than the rest.
+            </li>
+            <li><strong>Step 4:</strong> Line a sushi rolling mat with plastic wrap, and place a mackerel fillet on it
+              skin side down. Cover evenly with sushi rice, and roll with the mat. </li>
+            <li><strong>Step 5:</strong> Secure the mat with elastic bands, leave for 2 hours and cut it into pieces.
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
+
+  </div>
 
 
- <!----------------- 07 Kani Overlay Page ------------------->
-         
- <div id="overlay-kani" class="overlay">
+  <!----------------- 07 Kani Overlay Page ------------------->
 
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closeKani()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="kani">
+  <div id="overlay-kani" class="overlay">
 
+    <!-- x -->
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    <button class="closebtn" onclick="closeKani()"></button>
 
-              
+    <!--Content-->
+    <div class="overlay-content" id="kani">
 
 
-            <img src="image/kani.png" alt="kani sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Kani sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">カニ寿司                   </span>
-                    <audio id="player7" src="voice/kani_sushi.m4a"></audio>
-                    <button class="sound" id="sound7" ></button>
-
-                 </div>
-             </div>
-               <img src="image/kani.png" alt="kani sushi">
-
-      
-
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                    <li >Kanikama sticks  </li>
-                    <li > Nori (dried edible seaweed) </li>
-                    <li > Sushi rice/Sushi vinegar </li>
-                    <li >Water/Salt/Sugar  </li>
-
-                  
-
-                </ul>
-           
-            </div> 
-
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> Cook Kanikama stick and cut each stick into smaller pieces (about 2 inches) </li>
-                  <li ><strong>Step 2:</strong>  Cook sushi rice and mix it with vinegar. Make sushi rice ball out of it. </li>
-                  <li ><strong>Step 3:</strong> Place the kanikama piece on the rice, and then press it firmly to stick onto the rice. You can use one hand to hold the nigiri sushi, and use the hand hand to press. (Optional: you can use a small portion of wasabi to “glue” the crab stick to the rice for a more steady nigiri sushi.) </li>
-                  <li ><strong>Step 4:</strong> Cut the seaweed into 1/4- inch strips and wrap each strip around the width of the nigiri to secure the crab stick to the rice.   </li>
-                  <li ><strong>Step 5:</strong> Place the assembled nigiri on the plate. Serve and enjoy the kani suchi! </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+
+
+        <img src="image/kani.png" alt="kani sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Kani sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">カニ寿司 </span>
+            <audio id="player7" src="voice/kani_sushi.m4a"></audio>
+            <button class="sound" id="sound7"></button>
 
           </div>
+        </div>
+        <img src="image/kani.png" alt="kani sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Kanikama sticks </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar </li>
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Cook Kanikama stick and cut each stick into smaller pieces (about 2 inches)
+            </li>
+            <li><strong>Step 2:</strong> Cook sushi rice and mix it with vinegar. Make sushi rice ball out of it. </li>
+            <li><strong>Step 3:</strong> Place the kanikama piece on the rice, and then press it firmly to stick onto
+              the rice. You can use one hand to hold the nigiri sushi, and use the hand hand to press. (Optional: you
+              can use a small portion of wasabi to “glue” the crab stick to the rice for a more steady nigiri sushi.)
+            </li>
+            <li><strong>Step 4:</strong> Cut the seaweed into 1/4- inch strips and wrap each strip around the width of
+              the nigiri to secure the crab stick to the rice. </li>
+            <li><strong>Step 5:</strong> Place the assembled nigiri on the plate. Serve and enjoy the kani suchi! </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
+
+  </div>
 
 
- <!----------------- 08 Anago Overlay Page ------------------->
-         
- <div id="overlay-anago" class="overlay">
+  <!----------------- 08 Anago Overlay Page ------------------->
 
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closeAnago()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="anago">
+  <div id="overlay-anago" class="overlay">
 
+    <!-- x -->
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    <button class="closebtn" onclick="closeAnago()"></button>
 
-              
+    <!--Content-->
+    <div class="overlay-content" id="anago">
 
 
-            <img src="image/anago.png" alt="anago sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Anago sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">アナゴ寿司
-                    </span>
-                    <audio id="player8" src="voice/anago_sushi.m4a"></audio>
-                    <button class="sound" id="sound8" ></button>
-
-                 </div>
-             </div>
-               <img src="image/anago.png" alt="anago sushi">
-
-      
-
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                    <li >Anago  </li>
-                    <li > Mirin  </li>
-                    <li > Nori (dried edible seaweed) </li>
-                    <li > Sushi rice/Sushi vinegar </li>
-                    <li >Water/Salt/Sugar/Soy Sauce </li>
-
-                   
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                </ul>
-           
-            </div> 
-
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> Prepare Tsume(Eel Sauce) by repeated boiling of Anago and keep the sauce to cool.
-                  </li>
-                  <li ><strong>Step 2:</strong> Take the balance eel, brush the flesh with Tsume and broil for 2 minutes. Repeat it for another 2 times and bring it to room temperature.  </li>
-                  <li ><strong>Step 3:</strong> Arrange the eel, flesh down and skin side up, on the bottom of the mold or pan. Trim and patch the strip of eel, if necessary, to cover the bottom entirely. </li>
-                  <li ><strong>Step 4:</strong> Paint the top of each piece with a bit of sauce.    </li>
-                  <li ><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball with a slice of Anago, and wrap around with Nori strips. Serve with pink or red pickled ginger and wasabi if you like. </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+        <img src="image/anago.png" alt="anago sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Anago sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">アナゴ寿司
+            </span>
+            <audio id="player8" src="voice/anago_sushi.m4a"></audio>
+            <button class="sound" id="sound8"></button>
 
           </div>
+        </div>
+        <img src="image/anago.png" alt="anago sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Anago </li>
+            <li> Mirin </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar/Soy Sauce </li>
+
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Prepare Tsume(Eel Sauce) by repeated boiling of Anago and keep the sauce to
+              cool.
+            </li>
+            <li><strong>Step 2:</strong> Take the balance eel, brush the flesh with Tsume and broil for 2 minutes.
+              Repeat it for another 2 times and bring it to room temperature. </li>
+            <li><strong>Step 3:</strong> Arrange the eel, flesh down and skin side up, on the bottom of the mold or pan.
+              Trim and patch the strip of eel, if necessary, to cover the bottom entirely. </li>
+            <li><strong>Step 4:</strong> Paint the top of each piece with a bit of sauce. </li>
+            <li><strong>Step 5:</strong> Cook sushi rice and mix it with vinegar. Make sushi ball and top each rice ball
+              with a slice of Anago, and wrap around with Nori strips. Serve with pink or red pickled ginger and wasabi
+              if you like. </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
+
+  </div>
 
 
 
- <!----------------- 09 Ikura Overlay Page ------------------->
-         
- <div id="overlay-ikura" class="overlay">
+  <!----------------- 09 Ikura Overlay Page ------------------->
 
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closeIkura()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="ikura">
+  <div id="overlay-ikura" class="overlay">
 
+    <!-- x -->
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    <button class="closebtn" onclick="closeIkura()"></button>
 
-              
+    <!--Content-->
+    <div class="overlay-content" id="ikura">
 
 
-            <img src="image/ikura.png" alt="ikura sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Ikura sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">イクラ寿司
-
-                    </span>
-                    <audio id="player9" src="voice/ikura_sushi.m4a"></audio>
-                    <button class="sound" id="sound9" ></button>
-
-                 </div>
-             </div>
-               <img src="image/ikura.png" alt="ikura sushi">
-
-      
-
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                  <li > Mirin   </li>
-                  <li >Cured salmon roe  </li>
-                    <li > Nori (dried edible seaweed) </li>
-                    <li > Sushi rice/Sushi vinegar </li>
-                    <li >Water/Salt/Sugar/Soy Sauce/Wasabi  </li>
-                   
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                </ul>
-           
-            </div> 
-
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> In a medium bowl, combine salmon roe with soy sauce, mirin or sake, and dashi. Let stand for at least 15 and up to 30 minutes. (This is a good time to cook the rice.) If you can find Japanese cured salmon roe at a Japanese market, you can use it as is, without the marination step. Otherwise, salt-cured salmon roe (sold by good fishmongers) will work with the marination step listed here.
-                  </li>
-                  <li ><strong>Step 2:</strong>  Cook sushi rice and mix it with vinegar. 
-                  </li>
-                  <li ><strong>Step 3:</strong> Make sushi ball and lace a small amount of wasabi on each rice ball.
-                  </li>
-                  <li ><strong>Step 4:</strong> Cut a piece of nori 5cm by 10cm and wrap around the rice ball so that there is a rim to hold in the salmon roe.   </li>
-                  <li ><strong>Step 5:</strong> Top the rice with 20g salmon roe and enjoy! </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+        <img src="image/ikura.png" alt="ikura sushi">
+
+        <div class="wordstitle">
+          <span class="sushiname">Ikura sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">イクラ寿司
+
+            </span>
+            <audio id="player9" src="voice/ikura_sushi.m4a"></audio>
+            <button class="sound" id="sound9"></button>
 
           </div>
+        </div>
+        <img src="image/ikura.png" alt="ikura sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li> Mirin </li>
+            <li>Cured salmon roe </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar/Soy Sauce/Wasabi </li>
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> In a medium bowl, combine salmon roe with soy sauce, mirin or sake, and dashi.
+              Let stand for at least 15 and up to 30 minutes. (This is a good time to cook the rice.) If you can find
+              Japanese cured salmon roe at a Japanese market, you can use it as is, without the marination step.
+              Otherwise, salt-cured salmon roe (sold by good fishmongers) will work with the marination step listed
+              here.
+            </li>
+            <li><strong>Step 2:</strong> Cook sushi rice and mix it with vinegar.
+            </li>
+            <li><strong>Step 3:</strong> Make sushi ball and lace a small amount of wasabi on each rice ball.
+            </li>
+            <li><strong>Step 4:</strong> Cut a piece of nori 5cm by 10cm and wrap around the rice ball so that there is
+              a rim to hold in the salmon roe. </li>
+            <li><strong>Step 5:</strong> Top the rice with 20g salmon roe and enjoy! </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
+
+  </div>
 
 
- <!----------------- 10 Futomaki Overlay Page ------------------->
-         
- <div id="overlay-futomaki" class="overlay">
+  <!----------------- 10 Futomaki Overlay Page ------------------->
 
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closeFutomaki()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="futomaki">
+  <div id="overlay-futomaki" class="overlay">
 
+    <!-- x -->
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    <button class="closebtn" onclick="closeFutomaki()"></button>
 
-              
+    <!--Content-->
+    <div class="overlay-content" id="futomaki">
 
 
-            <img src="image/futomaki.png" alt="futomaki sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Futomaki sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">太巻き寿司
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
-                    </span>
-                    <audio id="player10" src="voice/futomaki_sushi.m4a"></audio>
-                    <button class="sound" id="sound10" ></button>
-
-                 </div>
-             </div>
-               <img src="image/futomaki.png" alt="futomaki sushi">
-
-      
-
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                    <li >Dashimaki tamago </li>
-                    <li > Cooked unagi (freshwater eel) </li>
-                    <li > Vege: Simmered shiitake mushrooms/kanpyo/Spinach/Cucumber  </li>
-                    <li > Sushi rice/Sushi vinegar/Sushi sakura denbu </li>
-                    <li >Water/Salt/Sugar  </li>
-                   
 
 
-                </ul>
-           
-            </div> 
+        <img src="image/futomaki.png" alt="futomaki sushi">
 
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
+        <div class="wordstitle">
+          <span class="sushiname">Futomaki sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">太巻き寿司
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> Boil all the vegetables and make sure they are spliced into stick shape. Gather all the ingredients. 
-                  </li>
-                  <li ><strong>Step 2:</strong>  Place a bamboo sushi mat on the working surface or cutting board. Then place a sheet of nori on the bamboo mat, shiny side down. Divide sushi rice into quarters.  </li>
-                  <li ><strong>Step 3:</strong> Leaving about a ½ inch (1.5 cm) strip along the top of nori farthest away from you. 
-                  </li>
-                  <li ><strong>Step 4:</strong> Place the cucumber toward the bottom of nori. Front ingredients will need to go over the other ingredients.    </li>
-                  <li ><strong>Step 5:</strong> From the bottom end (of sushi rice), start rolling nori sheet over the filling tightly and firmly with bamboo mat until the bottom end reaches the end of sushi rice on top. Use your fingers to hold the ingredients when you roll.
-                  </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+            </span>
+            <audio id="player10" src="voice/futomaki_sushi.m4a"></audio>
+            <button class="sound" id="sound10"></button>
 
           </div>
+        </div>
+        <img src="image/futomaki.png" alt="futomaki sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Dashimaki tamago </li>
+            <li> Cooked unagi (freshwater eel) </li>
+            <li> Vege: Simmered shiitake mushrooms/kanpyo/Spinach/Cucumber </li>
+            <li> Sushi rice/Sushi vinegar/Sushi sakura denbu </li>
+            <li>Water/Salt/Sugar </li>
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Boil all the vegetables and make sure they are spliced into stick shape.
+              Gather all the ingredients.
+            </li>
+            <li><strong>Step 2:</strong> Place a bamboo sushi mat on the working surface or cutting board. Then place a
+              sheet of nori on the bamboo mat, shiny side down. Divide sushi rice into quarters. </li>
+            <li><strong>Step 3:</strong> Leaving about a ½ inch (1.5 cm) strip along the top of nori farthest away from
+              you.
+            </li>
+            <li><strong>Step 4:</strong> Place the cucumber toward the bottom of nori. Front ingredients will need to go
+              over the other ingredients. </li>
+            <li><strong>Step 5:</strong> From the bottom end (of sushi rice), start rolling nori sheet over the filling
+              tightly and firmly with bamboo mat until the bottom end reaches the end of sushi rice on top. Use your
+              fingers to hold the ingredients when you roll.
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
 
-   <!----------------- 11 Philadelphia Overlay Page ------------------->
-         
- <div id="overlay-philadelphia" class="overlay">
+  </div>
 
-  <!-- x -->
-         
-  <button class="closebtn" onclick="closePhiladelphia()"></button>
-    
-  <!--Content-->
-        <div class="overlay-content" id="philadelphia">
+  <!----------------- 11 Philadelphia Overlay Page ------------------->
 
+  <div id="overlay-philadelphia" class="overlay">
 
-          <!-- Overlay title section -->
-          <div class="overlaytitle"> 
+    <!-- x -->
 
-              
+    <button class="closebtn" onclick="closePhiladelphia()"></button>
+
+    <!--Content-->
+    <div class="overlay-content" id="philadelphia">
 
 
-            <img src="image/philadelphia.png" alt="philadelphia sushi">
-            
-             <div class="wordstitle">
-               <span class="sushiname">Philadelphia sushi</span> 
-                 <div class="japanesetitle">
-                    <span id="japanese">フィラデルフィア寿司
+      <!-- Overlay title section -->
+      <div class="overlaytitle">
 
 
 
 
-                    </span>
-                    <audio id="player11" src="voice/philadelphia_sushi.m4a"></audio>
-                    <button class="sound" id="sound11" ></button>
+        <img src="image/philadelphia.png" alt="philadelphia sushi">
 
-                 </div>
-             </div>
-               <img src="image/philadelphia.png" alt="philadelphia sushi">
-
-      
-
-          </div> 
-
-          <!------- Overlay recipe section ---------->
-
-          <div class="bodycontainer">
-
-              <!-- recipe section: ingredient list -->
-            <div class="ingredientsection">
-
-                <span class="recipetitle">Ingredients:</span>
-
-                <div class="vl1"></div>
-
-                <ul class="ingredients">
-                    <li >Smoked salmon  </li>
-                    <li > Small cucumber (cut into matchsticks)  </li>
-                    <li > Nori (dried edible seaweed) </li>
-                    <li > Sushi rice/Sushi vinegar </li>
-                    <li >Water/Salt/Sugar/Cream cheese  </li>
-                   
+        <div class="wordstitle">
+          <span class="sushiname">Philadelphia sushi</span>
+          <div class="japanesetitle">
+            <span id="japanese">フィラデルフィア寿司
 
 
-                </ul>
-           
-            </div> 
-
-            <!-- recipe section: recipe content -->
-
-            <div class="recipesection">
-
-              <span class="recipetitle">Recipe:</span>
-
-              <div class="vl2"></div>
 
 
-                <ul class="recipecontent">
-                  <li > <strong>Step 1:</strong> Cook sushi rice and mix it with vinegar. On the rolling mat place one sheet of nori with the rough side facing upwards.
-                  </li>
-                  <li ><strong>Step 2:</strong> Wet your hands and grab a handful of rice and place it on the nori. Spread the rice evenly throughout the nori without smushing the rice down.  </li>
-                  <li ><strong>Step 3:</strong> Arrange, in a horizontal row 1 inch (2 cm) from the bottom, smoked salmon, cream cheese, and cucumber. </li>
-                  <li ><strong>Step 4:</strong> Grabbing both nori and the mat, roll the mat over the filling so the extra space at the bottom touches the other side, squeezing down to make a nice tight roll. Squeeze down along the way to keep the roll from holding its shape.   </li>
-                  <li ><strong>Step 5:</strong> Transfer the roll onto a cutting board. Rub a knife on a damp paper towel before slicing the roll into six equal portions.
-                  </li>
-                  
-                  
-                 </ul>
-         
-              </div> 
+            </span>
+            <audio id="player11" src="voice/philadelphia_sushi.m4a"></audio>
+            <button class="sound" id="sound11"></button>
 
           </div>
+        </div>
+        <img src="image/philadelphia.png" alt="philadelphia sushi">
 
-          <!--
+
+
+      </div>
+
+      <!------- Overlay recipe section ---------->
+
+      <div class="bodycontainer">
+
+        <!-- recipe section: ingredient list -->
+        <div class="ingredientsection">
+
+          <span class="recipetitle">Ingredients:</span>
+
+          <div class="vl1"></div>
+
+          <ul class="ingredients">
+            <li>Smoked salmon </li>
+            <li> Small cucumber (cut into matchsticks) </li>
+            <li> Nori (dried edible seaweed) </li>
+            <li> Sushi rice/Sushi vinegar </li>
+            <li>Water/Salt/Sugar/Cream cheese </li>
+
+
+
+          </ul>
+
+        </div>
+
+        <!-- recipe section: recipe content -->
+
+        <div class="recipesection">
+
+          <span class="recipetitle">Recipe:</span>
+
+          <div class="vl2"></div>
+
+
+          <ul class="recipecontent">
+            <li> <strong>Step 1:</strong> Cook sushi rice and mix it with vinegar. On the rolling mat place one sheet of
+              nori with the rough side facing upwards.
+            </li>
+            <li><strong>Step 2:</strong> Wet your hands and grab a handful of rice and place it on the nori. Spread the
+              rice evenly throughout the nori without smushing the rice down. </li>
+            <li><strong>Step 3:</strong> Arrange, in a horizontal row 1 inch (2 cm) from the bottom, smoked salmon,
+              cream cheese, and cucumber. </li>
+            <li><strong>Step 4:</strong> Grabbing both nori and the mat, roll the mat over the filling so the extra
+              space at the bottom touches the other side, squeezing down to make a nice tight roll. Squeeze down along
+              the way to keep the roll from holding its shape. </li>
+            <li><strong>Step 5:</strong> Transfer the roll onto a cutting board. Rub a knife on a damp paper towel
+              before slicing the roll into six equal portions.
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!--
             <div class="footer">
                 <span>-Go try it!-</span>
             </div>
             -->
 
 
-        </div>
-    
-  </div>   
+    </div>
+
+  </div>
 
 
 
 
 
-    <script src="mainpage.js"></script>
-    
-  </body>
+  <script src="mainpage.js"></script>
+
+</body>
+
 </html>
-
